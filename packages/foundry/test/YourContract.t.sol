@@ -19,7 +19,7 @@ contract YourContractTest is Test {
     }
 
     function testSetNewMessage() public {
-        yourContract.setGreeting("Learn Scaffold-ETH 2! :)");
+        yourContract.setGreeting("Learn Scaffold-ETH 2! :)", "BuidlGuidl");
         require(
             keccak256(bytes(yourContract.greeting())) ==
                 keccak256("Learn Scaffold-ETH 2! :)")
